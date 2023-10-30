@@ -3,11 +3,13 @@
 ## AIM:
 To write a program for the first come first serve method of disc scheduling.
 ## ALGORITHM:
-    Initialize an array RQ to store disk requests and variables n, TotalHeadMoment, and initial.
-    Prompt the user to input the number of requests (n) and the request sequence (RQ).
-    Prompt the user to input the initial head position (initial).
-    Calculate TotalHeadMoment by iterating through the requests, adding the absolute difference between each request and the current head position to TotalHeadMoment, and updating the head position.
-    Print the TotalHeadMoment as the result of the FCFS disk scheduling.
+
+   1. Initialize an array RQ to store disk requests and variables n, TotalHeadMoment, and initial.
+   2. Prompt the user to input the number of requests (n) and the request sequence (RQ).
+   3. Prompt the user to input the initial head position (initial).
+   4. Calculate TotalHeadMoment by iterating through the requests, adding the absolute difference between each request and the current head position to TotalHeadMoment, and updating the head position.
+   5. Print the TotalHeadMoment as the result of the FCFS disk scheduling.
+
 ## PROGRAM:
 ```
 #include <stdio.h>
@@ -36,20 +38,19 @@ return 0;
 ```
 ## OUTPUT:
 ![278818245-0868dcea-8d32-4ec7-af65-4bad297d4fde](https://github.com/Snehahv/OS-EX.11-IMPLEMENTATION-OF-DISK-SCHEDULING-ALGORITHMS/assets/119104131/9c578eb2-7153-4775-a65e-edc11202906b)
-
-
 ## RESULT:
 Thus, the implementation of the C program for first come first serve disc scheduling has been successfully executed.
+
 # DISK SCHEDULING SHORTEST SEEK TIME FIRST
 ## AIM:
 To write a program for the shortest seek time first method of disc scheduling.
 ## ALGORITHM:
 
-    Initialize variables and arrays for requests, total head movement, initial head position, and a counter.
-    Input the number of requests, the request sequence, and the initial head position from the user.
-    Find the nearest request by looping through the requests, calculating the absolute difference from the current head position, and updating the head position based on the closest request.
-    Repeat this process until all requests are processed, marking completed requests with a large number.
-    Print the total head movement as the result of the SSTF disk scheduling.
+    1.Initialize variables and arrays for requests, total head movement, initial head position, and a counter.
+    2.Input the number of requests, the request sequence, and the initial head position from the user.
+    3.Find the nearest request by looping through the requests, calculating the absolute difference from the current head position, and updating the head position based on the closest request.
+   4. Repeat this process until all requests are processed, marking completed requests with a large number.
+   5. Print the total head movement as the result of the SSTF disk scheduling.
 
 ## PROGRAM:
 ```
@@ -90,19 +91,18 @@ return 0;
 ![278818392-d1a2b610-b9f8-4769-8d57-444166bda691](https://github.com/Snehahv/OS-EX.11-IMPLEMENTATION-OF-DISK-SCHEDULING-ALGORITHMS/assets/119104131/5f8c8c3e-2b9a-4431-980c-5664bcdb68e5)
 
 ## RESULT:
-
 Thus, the implementation of the C program for shortest seek time first disc scheduling has been successfully executed.
+
 # DISK SCHEDULING SCAN OR ELEVATOR
 ## AIM:
-
 To write a program for the scan method of disc scheduling.
 ## ALGORITHM:
 
-    Initialize variables and arrays for requests, total head movement, initial head position, disk size, and the head movement direction.
-    Input the number of requests, the request sequence, initial head position, total disk size, and the head movement direction from the user.
-    Sort the request array in ascending order to facilitate the SCAN algorithm.
-    Find the index where the initial head position lies in the sorted request array and calculate head movements in the chosen direction (high or low) while iterating through the requests.
-    Calculate the total head movement by summing the absolute differences in head positions and print the result as the total head movement for the SCAN disk scheduling algorithm.
+    1.Initialize variables and arrays for requests, total head movement, initial head position, disk size, and the head movement direction.
+    2.Input the number of requests, the request sequence, initial head position, total disk size, and the head movement direction from the user.
+    3.Sort the request array in ascending order to facilitate the SCAN algorithm.
+    4.Find the index where the initial head position lies in the sorted request array and calculate head movements in the chosen direction (high or low) while iterating through the requests.
+    5.Calculate the total head movement by summing the absolute differences in head positions and print the result as the total head movement for the SCAN disk scheduling algorithm.
 
 ## PROGRAM:
 ```
@@ -181,18 +181,18 @@ return 0;
 ```
 ## OUTPUT:
 ![278818568-37ad4a9e-53b1-41f0-9d77-a8b7f39fea2a](https://github.com/Snehahv/OS-EX.11-IMPLEMENTATION-OF-DISK-SCHEDULING-ALGORITHMS/assets/119104131/ddbba56c-7a73-4ffa-ae1e-66baff130b46)
-
 ## RESULT:
 Thus, the implementation of the C program for SCAN disc scheduling has been successfully executed.
+
 # DISK SCHEDULING C-SCAN
 ## AIM:
 To write a program for the c-scan method of disc scheduling.
 ## ALGORITHM:
-    Initialize variables and arrays for requests, total head movement, initial head position, disk size, and the head movement direction.
-    Input the number of requests, the request sequence, initial head position, total disk size, and the head movement direction from the user.
-    Sort the request array in ascending order to facilitate the SCAN algorithm.
-    Find the index where the initial head position lies in the sorted request array and calculate head movements in the chosen direction (high or low) while iterating through the requests.
-    Calculate the total head movement by summing the absolute differences in head positions and print the result as the total head movement for the SCAN disk scheduling algorithm.
+   1. Initialize variables and arrays for requests, total head movement, initial head position, disk size, and the head movement direction.
+   2. Input the number of requests, the request sequence, initial head position, total disk size, and the head movement direction from the user.
+   3. Sort the request array in ascending order to facilitate the SCAN algorithm.
+    4.Find the index where the initial head position lies in the sorted request array and calculate head movements in the chosen direction (high or low) while iterating through the requests.
+   5. Calculate the total head movement by summing the absolute differences in head positions and print the result as the total head movement for the SCAN disk scheduling algorithm.
 
 ## PROGRAM:
 ```
@@ -282,15 +282,16 @@ int main()
 ![278818773-acb8e952-c04e-49f7-a5fe-314c6f5b8a2b](https://github.com/Snehahv/OS-EX.11-IMPLEMENTATION-OF-DISK-SCHEDULING-ALGORITHMS/assets/119104131/f87cac72-1800-49dd-8767-da4d8b581a6e)
 ## RESULT
 Thus, the implementation of C-SCAN Disk scheduling algorithm in C programming is done successfully.
+
 # DISK SCHEDULING LOOK
 ## AIM:
 To write a program for the look method of disc scheduling.
 ## ALGORITHM:
-    Initialize variables and arrays for requests, total head movement, initial head position, disk size, and the head movement direction.
-    Input the number of requests, the request sequence, initial head position, total disk size, and the head movement direction from the user.
-    Sort the request array in ascending order to facilitate the LOOK algorithm.
-    Find the index where the initial head position lies in the sorted request array and calculate head movements in the chosen direction (high or low) while iterating through the requests.
-    Calculate the total head movement by summing the absolute differences in head positions and print the result as the total head movement for the LOOK disk scheduling algorithm.
+    1.Initialize variables and arrays for requests, total head movement, initial head position, disk size, and the head movement direction.
+   2. Input the number of requests, the request sequence, initial head position, total disk size, and the head movement direction from the user.
+   3. Sort the request array in ascending order to facilitate the LOOK algorithm.
+   4. Find the index where the initial head position lies in the sorted request array and calculate head movements in the chosen direction (high or low) while iterating through the requests.
+   5. Calculate the total head movement by summing the absolute differences in head positions and print the result as the total head movement for the LOOK disk scheduling algorithm.
 
 ## PROGRAM:
 ```
@@ -367,16 +368,17 @@ return 0;
 
 ## RESULT:
 Thus, the implementation of the C program for LOOK disc scheduling has been successfully executed.
+
 # DISK SCHEDULING C-LOOK
 ## AIM:
 To write a program for the c-look method of disc scheduling.
 ## ALGORITHM:
 
-    Initialize variables and arrays for requests, total head movement, initial head position, disk size, and the head movement direction.
-    Input the number of requests, the request sequence, initial head position, total disk size, and the head movement direction from the user.
-    Sort the request array in ascending order to facilitate the LOOK algorithm.
-    Find the index where the initial head position lies in the sorted request array and calculate head movements in the chosen direction (high or low) while iterating through the requests.
-    Calculate the total head movement by summing the absolute differences in head positions and print the result as the total head movement for the LOOK disk scheduling algorithm.
+   1. Initialize variables and arrays for requests, total head movement, initial head position, disk size, and the head movement direction.
+    2.Input the number of requests, the request sequence, initial head position, total disk size, and the head movement direction from the user.
+   3. Sort the request array in ascending order to facilitate the LOOK algorithm.
+   4. Find the index where the initial head position lies in the sorted request array and calculate head movements in the chosen direction (high or low) while iterating through the requests.
+    5.Calculate the total head movement by summing the absolute differences in head positions and print the result as the total head movement for the LOOK disk scheduling algorithm.
 
 ## PROGRAM:
 ```
